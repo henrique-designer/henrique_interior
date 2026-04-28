@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de presupuesto para proyectos de interiorismo y mobiliario personalizado.">
+  <title>Henrique Design | Presupuesto</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <!-- Página de solicitud de presupuesto -->
+  <div class="page-wrapper">
+    <header>
+      <div class="logo">HENRIQUE <span>DESIGN</span></div>
+      <nav aria-label="Menú principal">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="presupuestos.html">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contenedor-form" aria-labelledby="presupuesto-title">
+        <h2 id="presupuesto-title">Solicitar presupuesto</h2>
+        <form action="#" method="POST" class="form-grid">
+          <div class="grupo-form">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+          </div>
+
+          <div class="grupo-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+          </div>
+
+          <div class="grupo-form">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9,15}" title="Introduce un teléfono válido" placeholder="Ej: 604218089">
+          </div>
+
+          <div class="grupo-form">
+            <label for="info">Solicite más información:</label>
+            <textarea id="info" name="info" required placeholder="Detalla las necesidades de tu proyecto..."></textarea>
+          </div>
+
+          <div class="grupo-checkbox">
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <label for="privacidad">Acepto la <a href="#">Política de privacidad</a> de la empresa.</label>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar solicitud</button>
+        </form>
+      </section>
+    </main>
+
+    <footer aria-label="Pie de página">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Henrique Design</h4>
+          <p>Especialistas en carpintería y diseño de interiores.</p>
+          <p>Sueca, Valencia, España.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Redes sociales</h4>
+          <div class="redes-sociales">
+            <a href="https://www.linkedin.com/in/henrique-da-costa-gomes-553706331" target="_blank" rel="noreferrer noopener">IN</a>
+            <a href="https://www.instagram.com/henrique_interior_designer/" target="_blank" rel="noreferrer noopener">IG</a>
+            <a href="https://www.facebook.com/henriqueda.costagomes" target="_blank" rel="noreferrer noopener">FB</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Aviso legal</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Uso de cookies</a>
+        </div>
+      </div>
+      <div class="copy">
+        <p>&copy; 2026 Henrique da Costa Gomes. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
