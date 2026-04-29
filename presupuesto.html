@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrique Design | Presupuesto</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/logo.svg" alt="Henrique Design logo">
+        <span>Henrique Design</span>
+      </a>
+      <nav class="main-nav" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="presupuesto.html" class="active">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container form-page">
+    <section class="section-intro">
+      <span>Presupuesto</span>
+      <h1>Solicita tu presupuesto personalizado</h1>
+      <p>Cuéntanos tu proyecto y recibes una propuesta ajustada a tus necesidades de diseño y fabricación.</p>
+    </section>
+
+    <section class="form-card">
+      <form action="#" method="post" novalidate>
+        <div class="form-grid">
+          <label>
+            Nombre completo
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="tucorreo@dominio.com" required>
+          </label>
+          <label>
+            Teléfono
+            <input type="tel" name="telefono" placeholder="+34 600 123 456" pattern="^[0-9+\s-]{9,20}$" required>
+          </label>
+          <label>
+            Tipo de proyecto
+            <select name="proyecto" required>
+              <option value="">Selecciona una opción</option>
+              <option value="residencial">Residencial</option>
+              <option value="comercial">Comercial</option>
+              <option value="oficina">Oficina</option>
+              <option value="otros">Otros</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="full-width">
+          Descripción del proyecto
+          <textarea name="descripcion" rows="5" placeholder="Describe tu idea, estilo y necesidades" required></textarea>
+        </label>
+
+        <label class="checkbox-field">
+          <input type="checkbox" name="privacidad" required>
+          He leído y acepto la <a href="#">política de privacidad</a>.
+        </label>
+
+        <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-footer">Henrique Design</p>
+        <p>Diseño interior y fabricación de mobiliario a medida desde Sueca, Valencia.</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <a href="index.html">Inicio</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="presupuesto.html">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Redes sociales</h4>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/henrique_interior_designer/" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+            <img src="img/social-instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/henrique-da-costa-gomes-553706331" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
+            <img src="img/social-linkedin.svg" alt="LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/henriqueda.costagomes" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+            <img src="img/social-facebook.svg" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="legal container">
+      <p>© 2026 Henrique Design. Aviso legal | Política de privacidad</p>
+    </div>
+  </footer>
+</body>
+</html>
